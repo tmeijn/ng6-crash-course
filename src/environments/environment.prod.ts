@@ -1,3 +1,6 @@
-export const environment = {
-  production: true
+import { Environment } from './env.model';
+
+export const environment: Environment = {
+  production: true,
+  apiRoot: ''
 };
