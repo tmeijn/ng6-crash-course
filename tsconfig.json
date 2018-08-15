@@ -7,6 +7,9 @@
     "declaration": false,
     "module": "es2015",
     "moduleResolution": "node",
+    "paths": {
+      "@models/*": ["src/app/models/*"]
+    },
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
