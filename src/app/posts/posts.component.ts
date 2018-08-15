@@ -11,10 +11,16 @@ export class PostsComponent implements OnInit {
 
   posts$: Post[];
 
+  showPostAmount = 10;
+
   constructor(private data: DataService) { }
 
   ngOnInit() {
     this.data.getPosts().subscribe(data => this.posts$ = data);
+  }
+
+  showMorePosts() {
+    this.showPostAmount += 10;
   }
 
 }
