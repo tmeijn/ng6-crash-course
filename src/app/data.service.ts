@@ -17,7 +17,7 @@ export class DataService {
     return this.http.get(`${environment.apiRoot}/users/${userId}`);
   }
 
-  getPosts() {
+  getPosts(): any {
     return this.http.get(`${environment.apiRoot}/posts`);
   }
 }
